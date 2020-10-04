@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<script src="aman.js" type="text/javascript"></script>
+</head>
+<body>
+	Character Validation<br/>
+	<input type="text" name="name" onkeypress="return checkChar(event)"><br/>
+	Email Validation<br/>
+	<input type="email" name="email" id="IdMail" onkeypress="EmailValid()"><br/><span id="ShowEmailMsg"></span><br/>
+	<input type="password" id="idPassword" onkeyup="PassValid()"/>
+    <div>
+        <button type="button" onclick="BtnShow()">
+            <span value="+" style="font-size: 20px;" id="idBtnOpen"></span>
+            <span value="-" style="font-size: 20px;" id="idBtnClose"></span>
+        </button>
+    </div>
+    <span id="ShowMsgPassword"></span><br/>
+    <input type="text" name="mobile" maxlength="10" onkeypress="return checkNum(event)" onkeydown="mobValid()">
+</body>
+</html>
